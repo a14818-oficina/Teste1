@@ -1,0 +1,23 @@
+meta {
+  name: criar-tarefa
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://127.0.0.1:5000/tarefas
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDU2MzM5MSwianRpIjoiNTU1Y2NjNDAtMzAyYy00MWUxLTkxNGMtZjEwZjcxYzlhYjkwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjIiLCJuYmYiOjE3OTQ1NjMzOTEsImNzcmYiOiIwNmU1ZThjMC1mNzQ3LTQ2MzktYThiNi0wN2I3YmRlZDY0YzAiLCJleHAiOjE3OTQ1NjQyOTEsInRpcG8iOiJ1dGlsaXphZG9yIn0.lJMp_8rxzhwJoZmJQMdUrR2c7gy-o945N-1VBgBacd4
+}
+
+body:json {
+  {
+    "titulo": "Jogar",
+    "descricao": "Rever JWT",
+    "estado": "Em curso"
+  }
+}
